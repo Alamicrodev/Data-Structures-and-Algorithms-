@@ -47,7 +47,7 @@ function merge(array, start, mid, end) {
 // -------------- END OF MERGE ----------------
 
 // ------------- MERGE SORT -------------------
-// merge sort function intakes the array, the starting in idex and the ending index.
+// merge sort function intakes the array, the starting in index and the ending index.
 // the start and end represent the sub array we will work with.
 function mergeSort(array, start, end) {
 	// if the start is less than end that means the subarray has more than one characters

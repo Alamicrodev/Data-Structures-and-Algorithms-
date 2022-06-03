@@ -36,9 +36,9 @@ console.log(stdScore);
 
 // OUTER LOOP
 // runs on all elements-1 because the last one is automatically sorted if all the smallest are being moved to the right.
-// In each attemp we change the length of the array passed into the nested loop (stdScore.length - 1 - i), this is because we know that the number of elements on the right which have been sorted must be equal to the iteration of the outer loop.
+// In each iteration we change the length of the array passed into the nested loop (stdScore.length - 1 - i), this is because we know that the number of elements on the right which have been sorted must be equal to the iteration of the outer loop.
 // similarly, this must also be taken into account in the last stage swapping of elements, we don't want to swap the lastelement of the array instead lastIndex-outerloopiteration.
-// remember the array we worked with in the internal loop is shortend by subtracting the length of the array with the outer index position (stdScore.length - 1 - i). That's why the last element being swapped must also be only as long as the array we worled with.
+// remember the array we worked with in the internal loop is shortend by subtracting the length of the array with the outer index position (stdScore.length - 1 - i). That's why the last element being swapped must also be only at last index of the array we worked with.
 
 // Time Complexity: multiple loops so O(n^2)
 // Space Complexity: O(1)
