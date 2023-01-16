@@ -78,3 +78,4 @@ console.log(NodeA.isConnected(NodeE)); // should be false
 // in a cyclic graph there is atleast a path for one node back to itself through various links, in acyclic this does not happen.
 
 // self-loop: when a node has connection to itself.
+
