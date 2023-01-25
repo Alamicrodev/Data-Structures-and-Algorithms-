@@ -236,3 +236,44 @@ mytree.insert(35);
 mytree.insert(60);
 mytree.remove(59);
 console.log(mytree.inOrderTraversal());
+
+
+// -------------------------  MORE ALGORITHMS RELATED TO BST  --------------------------
+
+// Morris Traversal Algorithm (IN ORDER)
+// Morris Traversal Algorithm is a method to traverse a binary tree without using recursion.
+// Watch this video fro explanation https://www.youtube.com/watch?v=0ydDMtuvbUY
+
+var inorderTraversal = function(root) {
+
+    let tourist = root; 
+    let resultArray = []
+
+    while(tourist != null){
+        let guide = tourist.left
+
+        if (tourist.left != null) {
+            while(guide.right != null && guide.right != tourist) {
+                guide = guide.right
+            }
+
+            if (guide.right == null) {
+                guide.right = tourist
+                tourist = tourist.left
+            }
+            else {
+                guide.right = null 
+                resultArray.push(tourist.val)
+                tourist = tourist.right
+            }
+        }
+        else
+        {
+           resultArray.push(tourist.val)
+           tourist = tourist.right
+        }
+
+    }
+
+     return resultArray 
+};
