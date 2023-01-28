@@ -264,7 +264,7 @@ var inorderTraversal = function(root) {
             else {
                 guide.right = null 
                 resultArray.push(tourist.val)
-                tourist = tourist.right
+                tourist = tourist.right 
             }
         }
         else
