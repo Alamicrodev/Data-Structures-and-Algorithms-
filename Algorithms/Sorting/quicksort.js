@@ -6,13 +6,13 @@
 let bookStack = [5, 2, 1, 15, 30, 3, 9, 4];
 
 // ------------------------- Partition Start -----------------------------------
-// return to partitition after checking out quicksort. DON'T START HERE
+// return to partitition after checking out quicksort function below. DON'T START HERE
 function Partition(array, first, last) {
 	// You can have any element as pivot value but its easier to have the last one as pivot.
 	let pivotValue = array[last];
 
 	//  Pivot index keeps track of the first smaller/bigger value(the values that go on the right of pivot depending on type decending or accending), in the end allowing us to move pivot to the center, it always starts from the first index position of the subarray.
-	// eg [30,15,9,5,3(index position),2,1, 4(pivot)] in the end :p
+	// eg [30(index position),15,9,5,3,2,1, 4(pivot)] :p
 	let pivotIndex = first;
 
 	// going through all elements of the subarray, except the last one which is the pivot.
