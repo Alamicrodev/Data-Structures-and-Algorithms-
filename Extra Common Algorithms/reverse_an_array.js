@@ -1,4 +1,5 @@
 // This simple algorithm allows you to reverse an array or a string when needed
+// This is called two pointers technique/algorithm
 
 
 var reverseString = function(s) {
