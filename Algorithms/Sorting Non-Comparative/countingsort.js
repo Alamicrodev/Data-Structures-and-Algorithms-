@@ -65,6 +65,15 @@ function countingSort(nums, k) {
 
 }
 
-
+// Time complexity = O(n+k+n) => O(n)
+// Space complexity = O(n) 
+// can you think of how we can use counting sort to sort single alphabets?
 
 console.log(countingSort([2,4,5,3,2,1], 5))
+
+// The problem with counting sort starts when the range starts getting really big. 
+// or we do not have any range at all. 
+// yes you can you Math.max() to find the maximum value and use it as range.
+// Math.max() itself is O(n) so it increases one more iteration in the loop.   
+// but there still will be a problem when range gets too big so it takes so much space. 
+// we try an solve this problem usign radix sort.
